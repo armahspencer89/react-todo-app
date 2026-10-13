@@ -1,16 +1,118 @@
-# React + Vite
+# React ToDo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A task management application built with React. Users can create, organize, and track tasks using priorities, categories, due dates, and completion status.
 
-Currently, two official plugins are available:
+Developed as a coursework project for the GUI Development course at Thomas More.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Create, view, edit, and delete tasks
+- Mark tasks as completed or incomplete
+- Search and filter tasks
+- Organize tasks by priority and category
+- Add custom categories
+- Set due dates, with validation to prevent past dates
+- View task descriptions and details
+- Confirm before deleting a task
+- Receive a warning about unsaved changes when editing
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- **React** — component-based user interface
+- **Vite** — development server and production builds
+- **React Router** — navigation between pages
+- **Context API** — shared task state
+- **JSON Server** — local REST API backed by `db.json`
+- **CSS and normalize.css** — styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+Install Node.js and npm. Use a Node.js version compatible with the Vite version listed in `package.json`.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/armahspencer89/react-todo-app.git
+cd react-todo-app
+```
+
+Install dependencies:
+
+```bash
+npm ci
+```
+
+### Run the Application
+
+Start the local API:
+
+```bash
+npm run server
+```
+
+Open a second terminal in the same project folder and start React:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed by Vite in your browser.
+
+Keep both terminals running while using the application. Task data is stored in `db.json` through JSON Server.
+
+## Other Commands
+
+Build the frontend for production:
+
+```bash
+npm run build
+```
+
+Preview the frontend build:
+
+```bash
+npm run preview
+```
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+JSON Server must also be running when using the frontend preview.
+
+## Project Structure
+
+```text
+src/
+├── api/          # API requests
+├── assets/       # Images and other assets
+├── components/   # Reusable UI components
+├── pages/        # Pages used by React Router
+├── store/        # Shared state using Context API
+├── App.jsx
+└── main.jsx
+
+public/           # Static assets
+db.json           # Local task data
+```
+
+## What I Practiced
+
+- Building reusable React components
+- Managing state with hooks and Context API
+- Navigating with React Router
+- Making REST API requests
+- Implementing task CRUD operations
+- Validating forms and handling user interactions
+- Using Git and GitHub for version control
+
+## Author
+
+Spencer Armah  
+[GitHub](https://github.com/armahspencer89)
