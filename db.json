@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "title": "Present My Work",
+      "description": " 💻 Finish project",
+      "dueDate": "2026-06-09",
+      "priority": "High",
+      "category": "School",
+      "customCategory": "",
+      "completed": true,
+      "id": "hXoBq6XBQTc"
+    },
+    {
+      "title": "Clean House",
+      "description": "clean the house",
+      "dueDate": "2026-10-14",
+      "priority": "High",
+      "category": "Personal",
+      "customCategory": "",
+      "completed": false,
+      "id": "NbaOWlG4ADQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
